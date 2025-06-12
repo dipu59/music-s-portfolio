@@ -1,8 +1,8 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 import React from "react";
 import { BackgroundGradient } from "../ui/background-gradient";
 import { CardData } from "@/lib/data";
+import Image from "next/image";
 
 export default function Card() {
   return (
@@ -20,7 +20,7 @@ export default function Card() {
       {CardData.map((items, index) => (
           <div className="max-w-sm p-4  justify-center items-center flex flex-col mx-auto " key={index}>
             <BackgroundGradient className="rounded-[22px]  max-w-sm p-4 sm:p-10 bg-white dark:bg-zinc-900">
-              <img
+              <Image
                 src={items.path}
                 alt="jordans"
                 height="400"
