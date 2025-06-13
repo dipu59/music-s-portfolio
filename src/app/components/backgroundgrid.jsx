@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 
 export default function GridBackground() {
   return (
-    <div className="relative flex flex-col h-[50rem] w-full items-center justify-center bg-white dark:bg-black">
+    <div className="relative overflow-hidden flex flex-col h-[50rem] w-full items-center justify-center bg-white dark:bg-black">
       <div
         className={cn(
           "absolute inset-0",
@@ -26,7 +26,7 @@ export default function GridBackground() {
         <InfiniteMovingCards
           items={testimonials}
           direction="right"
-          speed="slow"
+          speed="fast"
         />
       </div>
     </div>
