@@ -5,13 +5,6 @@
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #000000;
@@ -25,11 +18,18 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
+/* ✅ All custom props in one @theme inline */
 @theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
   --animate-spotlight: spotlight 3s ease 1s 1 forwards;
+  --animate-scroll: scroll var(--animation-duration, 3.0s) var(--animation-direction, forwards) linear infinite;
 }
- 
+
+/* ✅ Keyframes must be declared outside @theme */
 @keyframes spotlight {
   0% {
     opacity: 0;
@@ -38,5 +38,11 @@ body {
   100% {
     opacity: 1;
     transform: translate(-50%, -40%) scale(1.25);
+  }
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
   }
 }
