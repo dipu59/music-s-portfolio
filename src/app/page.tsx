@@ -4,6 +4,7 @@ import Card from './components/card'
 import GridBackground from './components/backgroundgrid'
 import { StickyScrollRevealDemo } from './components/stickyscroll'
 import HoverEffrct from './components/hovercards'
+import { VortexDemoSecond } from './components/glowingbackground'
 function Page() {
   return (
     <div>
@@ -11,7 +12,8 @@ function Page() {
       <Card />
       <StickyScrollRevealDemo />
       <GridBackground />
-      <HoverEffrct/>
+      <HoverEffrct />
+      <VortexDemoSecond/>
     </div>
   )
 }
