@@ -5,6 +5,7 @@ import GridBackground from './components/backgroundgrid'
 import { StickyScrollRevealDemo } from './components/stickyscroll'
 import HoverEffrct from './components/hovercards'
 import { VortexDemoSecond } from './components/glowingbackground'
+import Footer from './components/footter'
 function Page() {
   return (
     <div>
@@ -13,7 +14,8 @@ function Page() {
       <StickyScrollRevealDemo />
       <GridBackground />
       <HoverEffrct />
-      <VortexDemoSecond/>
+      <VortexDemoSecond />
+      <Footer/>
     </div>
   )
 }

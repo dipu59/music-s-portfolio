@@ -21,7 +21,7 @@ export function VortexDemoSecond() {
           Discover the talented professionals who will guide your musical
           journey
         </p>
-       <div className="flex flex-row items-center justify-center  my-10 w-full">
+       <div className="flex flex-row items-center justify-center  my-4 w-full">
       <AnimatedTooltip items={people} />
               </div>
               <h2 className='text-center'>Hello World</h2>
