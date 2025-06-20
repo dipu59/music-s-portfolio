@@ -32,7 +32,7 @@ export default function BackgroundBeamsDemo() {
             <HoverBorderGradient
               containerClassName="rounded-full"
               as="button"
-              className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2 px-7 py-2"
+              className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2 px-7 py-2 active:scale-95 cursor-pointer"
             >
               <span>Send Message</span>
             </HoverBorderGradient>
